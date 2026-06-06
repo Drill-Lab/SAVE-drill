@@ -1,0 +1,25 @@
+Source folders (your Drill-lab on Google Drive):
+  g:\My Drive\Drill-lab\Opening Scripts - SAVE   -> intros renamed below
+  g:\My Drive\Drill-lab\Support                  -> support-1.m4a … support-N.m4a
+  g:\My Drive\Drill-lab\Acknowledge              -> acknowledge-1.m4a …
+  g:\My Drive\Drill-lab\Validate                 -> validate-1.m4a …
+  g:\My Drive\Drill-lab\Emotion Naming           -> emotion-naming-1.m4a …
+
+Files expected in this folder (see lib/save-drill-config.ts):
+
+Intros (.m4a):
+  support-intro.m4a
+  acknowledge-intro.m4a
+  validate-intro.m4a
+  emotion-naming-intro.m4a
+
+Patient prompts (.m4a):
+  support-1 … support-5
+  acknowledge-1 … acknowledge-6
+  validate-1 … validate-5
+  emotion-naming-1 … emotion-naming-5
+
+Sync from Drive into this project (run from repo root):
+  pwsh -File web/scripts/sync-drill-audio-from-drive.ps1
+
+If a file is missing, the drill shows the written patient line instead.
